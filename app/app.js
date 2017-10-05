@@ -1,11 +1,17 @@
 angular.module('ecommerce', ['ui.router'])
   .config(function($stateProvider, $urlRouterProvider){
-  // Setup Addition Routing Here.
-  $stateProvider.state('components', {
-    url:'/components',
-    templateUrl:'app/views/components/components.html',
-    controller:'componentsCtrl'
-  })
+    $stateProvider.state('home', {
+      templateUrl:'app/views/home/home.html',
 
-  $urlRouterProvider.otherwise('/components');
-});
+    }).state('components', {
+      url:'/components',
+      templateUrl:'app/views/components/components.html',
+      controller:'componentsCtrl'
+    }).state('products', {
+      url:'/products',
+      templateUrl:'app/views/components/components.html',
+      // controller:'productsCtrl'
+    })
+
+    $urlRouterProvider.otherwise('/components');
+  })
