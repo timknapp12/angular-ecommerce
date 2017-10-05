@@ -1,5 +1,6 @@
 product {
-  display:block;
+  display:flex;
+  min-height:200px;
 }
 product .picture{
   background-color:#eee;
