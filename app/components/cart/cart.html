@@ -1,7 +1,0 @@
-<div class="line-item" ng-repeat="lineItem in ct.cart">
-  <product product="lineItem.product"></product>
-  <input type="number" ng-model="lineItem.amount" min="0">
-</div>
-<div class="total">
-  {{ct.getTotal() | currency}}
-</div>
