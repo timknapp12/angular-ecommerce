@@ -1,7 +1,8 @@
 angular.module('ecommerce').config(function($stateProvider, $urlRouterProvider){
   $stateProvider.state('home', {
     url:'/',
-    templateUrl:'app/views/home/home.html'
+    templateUrl:'app/views/home/home.html',
+    controller:'homeCtrl'
   }).state('products', {
     url:'/products',
     templateUrl:'app/views/productList/productList.html',
