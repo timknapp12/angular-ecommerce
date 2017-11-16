@@ -1,12 +1,5 @@
 angular.module('ecommerce').service('cartSrvc', function(){
-  let cart = [{
-        amount:1,
-        product:{name:'Space Fruit',
-        imageUrl:'https://ctl.s6img.com/society6/img/TtK7KWlA4hPvW98_g3IMjwK5vXc/h_550,w_550/tshirts/men/greybg/black/~artwork,bg_FFFFFFFF/s6-0025/a/11385279_14899658/~~/lunar-fruit-tshirts.jpg',
-        description:'These stylish shoes are great for throwing at people.  Holding pencils.  Also could be worn on feet.',
-        price:30
-      }}
-  ];
+  let cart = [];
 
   this.addItem = function(newItem){
     cart.push({

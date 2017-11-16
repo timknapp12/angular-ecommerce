@@ -2,6 +2,8 @@
 
 <h2>Daily Deals</h2>
 <!-- ng-repeat over products once we have the component -->
-<product ng-repeat="p in products"
-         product="p">
-</product>
+<div style="display:flex;flex-wrap:wrap;">
+  <product ng-repeat="p in products"
+            product="p">
+  </product>
+</div>
